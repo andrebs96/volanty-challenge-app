@@ -53,7 +53,6 @@ export default new Vuex.Store({
 
       const response = await fipeApi.obterValor(state.marcaSelecionada, state.modeloSelecionado, state.anoSelecionado)
       commit('listarValor', response.data)
-      console.log('listarValor', response.data)
 
     }
   },
